@@ -1,30 +1,27 @@
 <?php
-/**
- * Copyright (C) 1997-2018 Reyesoft <info@reyesoft.com>.
- *
- * This file is part of php-afip-ws. php-afip-ws can not be copied and/or
- * distributed without the express permission of Reyesoft
- */
 
 declare(strict_types=1);
 
-namespace Multinexo\WSFE;
+namespace enconte\afipws\WSFE;
 
-use Multinexo\Exceptions\ManejadorResultados;
-use Multinexo\Exceptions\WsException;
-use Multinexo\Models\AfipConfig;
-use Multinexo\Models\Invoice;
+use enconte\afipws\Exceptions\ManejadorResultados;
+use enconte\afipws\Exceptions\WsException;
+use enconte\afipws\Models\AfipConfig;
+use enconte\afipws\Models\Factura;
 
 /**
  * Class Wsfe (Invoice without items).
  */
-class Wsfe extends Invoice
+class Wsfe extends Factura
 {
-    public function __construct(AfipConfig $afipConfig)
+    public function __construct()
     {
         $this->ws = 'wsfe';
         $this->resultado = new ManejadorResultados();
+    }
 
+    public function conectar(AfipConfig $afipConfig)
+    {
         parent::__construct($afipConfig);
     }
 
@@ -33,7 +30,7 @@ class Wsfe extends Invoice
      *
      * @throws WsException
      */
-    public function createInvoice()
+    public function nuevaFactura()
     {
         $this->validateDataInvoice();
 
@@ -54,33 +51,33 @@ class Wsfe extends Invoice
      * para un periodo/orden.
      *
      * @throws WsException
-     * @throws \Multinexo\Exceptions\ValidationException
+     * @throws \enconte\afipws\Exceptions\ValidationException
      */
-    public function getCAEA()
+    public function getCAE()
     {
         $this->validarDatos($this->datos, $this->getRules('fe'));
 
-        return $this->FECAEAConsultar($this->datos);
+        return $this->FECAEConsultar($this->datos);
     }
 
     /**
      * Permite solicitar Código de Autorización Electrónico Anticipado (CAEA).
      *
      * @throws WsException
-     * @throws \Multinexo\Exceptions\ValidationException
+     * @throws \enconte\afipws\Exceptions\ValidationException
      */
-    public function requestCAEA()
+    public function requestCAE()
     {
         $this->validarDatos($this->datos, $this->getRules('fe'));
 
-        return $this->FECAEASolicitar($this->datos);
+        return $this->FECAESolicitar($this->datos);
     }
 
     /**
      * Permite consultar mediante tipo, numero de comprobante y punto de venta los datos  de un comprobante ya emitido.
      *
      * @throws WsException
-     * @throws \Multinexo\Exceptions\ValidationException
+     * @throws \enconte\afipws\Exceptions\ValidationException
      */
     public function getInvoice()
     {

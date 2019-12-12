@@ -10,7 +10,7 @@ class Facade extends IlluminateFacade {
      *
      * @return string
      */
-    protected static function getFacadeAccessor() { return 'afipws.wrapper'; }
+    protected static function getFacadeAccessor() { return 'afip'; }
 
     /**
      * Resolve a new instance

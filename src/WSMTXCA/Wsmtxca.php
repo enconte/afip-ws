@@ -1,19 +1,13 @@
 <?php
-/**
- * Copyright (C) 1997-2018 Reyesoft <info@reyesoft.com>.
- *
- * This file is part of php-afip-ws. php-afip-ws can not be copied and/or
- * distributed without the express permission of Reyesoft
- */
 
 declare(strict_types=1);
 
-namespace Multinexo\WSMTXCA;
+namespace enconte\afipws\WSMTXCA;
 
-use Multinexo\Exceptions\ManejadorResultados;
-use Multinexo\Exceptions\WsException;
-use Multinexo\Models\AfipConfig;
-use Multinexo\Models\Invoice;
+use enconte\afipws\Exceptions\ManejadorResultados;
+use enconte\afipws\Exceptions\WsException;
+use enconte\afipws\Models\AfipConfig;
+use enconte\afipws\Models\Invoice;
 
 /**
  * Class Wsmtxca (Invoice with items).
@@ -58,33 +52,33 @@ class Wsmtxca extends Invoice
     }
 
     /**
-     * Permite consultar  la  información  correspondiente  a  un  CAEA  previamente  otorgado.
+     * Permite consultar  la  información  correspondiente  a  un  CAE  previamente  otorgado.
      *
      * @throws WsException
-     * @throws \Multinexo\Exceptions\ValidationException
+     * @throws \enconte\afipws\Exceptions\ValidationException
      */
-    public function getCAEA()
+    public function getCAE()
     {
         $this->validarDatos($this->datos, $this->getRules('fe'));
 
-        return $this->wsConsultarCAEA($this->datos);
+        return $this->wsConsultarCAE($this->datos);
     }
 
     /**
-     * Permite solicitar Código de Autorización Electrónico Anticipado (CAEA).
+     * Permite solicitar Código de Autorización Electrónico (CAE).
      *
      * @throws WsException
      */
-    public function requestCAEA()
+    public function requestCAE()
     {
-        return $this->wsSolicitarCAEA($this->datos);
+        return $this->wsSolicitarCAE($this->datos);
     }
 
     /**
      * Permite consultar  la  información  correspondiente  a  un  CAEA  previamente  otorgado entre un rango de fechas.
      *
      * @throws WsException
-     * @throws \Multinexo\Exceptions\ValidationException
+     * @throws \enconte\afipws\Exceptions\ValidationException
      */
     public function consultarCAEAEntreFechas()
     {
@@ -98,7 +92,7 @@ class Wsmtxca extends Invoice
      * Permite consultar un comprobante con items ya emitido.
      *
      * @throws WsException
-     * @throws \Multinexo\Exceptions\ValidationException
+     * @throws \enconte\afipws\Exceptions\ValidationException
      */
     public function getInvoice()
     {

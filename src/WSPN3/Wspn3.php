@@ -1,19 +1,13 @@
 <?php
-/**
- * Copyright (C) 1997-2018 Reyesoft <info@reyesoft.com>.
- *
- * This file is part of php-afip-ws. php-afip-ws can not be copied and/or
- * distributed without the express permission of Reyesoft
- */
 
 declare(strict_types=1);
 
-namespace Multinexo\WSPN3;
+namespace enconte\afipws\WSPN3;
 
-use Multinexo\Auth\Authentication;
-use Multinexo\Exceptions\ManejadorResultados;
-use Multinexo\Exceptions\WsException;
-use Multinexo\Models\AfipConfig;
+use enconte\afipws\Auth\Authentication;
+use enconte\afipws\Exceptions\ManejadorResultados;
+use enconte\afipws\Exceptions\WsException;
+use enconte\afipws\Models\AfipConfig;
 use stdClass;
 
 /**

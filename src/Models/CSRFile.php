@@ -1,14 +1,8 @@
 <?php
-/**
- * Copyright (C) 1997-2018 Reyesoft <info@reyesoft.com>.
- *
- * This file is part of php-afip-ws. php-afip-ws can not be copied and/or
- * distributed without the express permission of Reyesoft
- */
 
 declare(strict_types=1);
 
-namespace Multinexo\Models;
+namespace enconte\afipws\Models;
 
 class CSRFile
 {
@@ -24,7 +18,7 @@ class CSRFile
         string $business_name,
         int $business_cuit,
         string $privatekey_path,
-        string $app_name = 'Multinexo library'
+        string $app_name = 'Enconte library'
     ) {
         $this->business_name = $business_name;
         $this->business_cuit = $business_cuit;

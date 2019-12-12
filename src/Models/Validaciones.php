@@ -1,19 +1,13 @@
 <?php
-/**
- * Copyright (C) 1997-2018 Reyesoft <info@reyesoft.com>.
- *
- * This file is part of php-afip-ws. php-afip-ws can not be copied and/or
- * distributed without the express permission of Reyesoft
- */
 
 declare(strict_types=1);
 
-namespace Multinexo\Models;
+namespace enconte\afipws\Models;
 
-use Multinexo\Exceptions\ValidationException;
-use Multinexo\WSFE\Wsfe;
-use Multinexo\WSMTXCA\Wsmtxca;
-use Multinexo\WSMTXCA\WsParametros;
+use enconte\afipws\Exceptions\ValidationException;
+use enconte\afipws\WSFE\Wsfe;
+use enconte\afipws\WSMTXCA\Wsmtxca;
+use enconte\afipws\WSMTXCA\WsParametros;
 use Respect\Validation\Exceptions\NestedValidationException;
 use Respect\Validation\Validator as v;
 
@@ -120,7 +114,7 @@ trait Validaciones
             'importeSubtotal' => v::floatVal()->between(0, 9999999999999.99),
             'importeIVA' => v::floatVal()->between(0, 9999999999999.99),
             'importeTotal' => v::floatVal()->between(0, 9999999999999.99),
-            'caea' => v::intVal()->length(14, 14),
+            'cae' => v::intVal()->length(14, 14),
         ];
 
         if ($this->ws === 'wsfe') {
