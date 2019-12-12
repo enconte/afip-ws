@@ -1,0 +1,42 @@
+{
+    "name": "enconte/afipws",
+    "type": "library",
+    "description": "Librería PHP para interactuar con los Web Services de AFIP (Argentina)",
+    "keywords": [
+        "afip",
+        "argentina",
+        "cae",
+        "factura electronica",
+        "gratis",
+        "php",
+        "soap",
+        "webservice"
+    ],
+    "homepage": "https://github.com/enconte/afipws",
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1",
+        "ext-soap": "*"
+    },
+    "authors": [
+        {
+            "name": "Eduardo Conte",
+            "email": "enconte@hotmail.com"
+        }
+    ],
+    "autoload": {
+      "psr-4": {
+        "Enconte\\AFIPWS\\": "src/"
+      }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Enconte\\AFIPWS\\ServiceProvider"
+            ],
+            "aliases": {
+                "AFIPWS": "Enconte\\AFIPWS\\Facade"
+            }
+        }
+    }
+}
