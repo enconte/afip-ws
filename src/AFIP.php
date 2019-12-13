@@ -17,34 +17,25 @@ class AFIP{
     /** @var WSFE  */
     protected $wsfe;
 
-    /** @var \Illuminate\Contracts\Config\Repository  */
-    protected $config;
+    /** @var Factrura  */
+    protected $factura;
 
 
     /**
-     * @param AFIPWS $afipws
+     * @param wsfe $wsfe
      */
-    public function __construct(WSFE $wsfe, ConfigRepository $config){
+    public function __construct(WSFE $wsfe, Factura $factura){
         $this->wsfe = $wsfe;
-        $this->config = $config;
+        $this->factura = $factura;
     }
 
     /**
-     * Get the AFIPWS instance
+     * Crear una factura
      *
-     * @return AFIPWS
+     * @return 
      */
-    public function getAFIPWS(){
-        return $this->afipws;
-    }
-
-    /**
-     * Get the AFIPWS instance
-     *
-     * @return AFIPWS
-     */
-    public function crearFactura($data){
-        return $this->afipws;
+    public function crearFactura(array $data){
+        return $this->wsfe->conectar();
     }
 
     

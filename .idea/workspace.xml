@@ -2,26 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="499ce8c9-a579-4946-8967-77c6b83fdfe3" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Models/Invoice.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Models/InvoiceInterface.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AFIP.php" afterPath="$PROJECT_DIR$/src/AFIP.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Models/AfipConfig.php" afterPath="$PROJECT_DIR$/src/Models/AfipConfig.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Models/AfipWebService.php" afterPath="$PROJECT_DIR$/src/Models/AfipWebService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Auth/Authentication.php" afterPath="$PROJECT_DIR$/src/Auth/Authentication.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Models/CSRFile.php" afterPath="$PROJECT_DIR$/src/Models/CSRFile.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Facade.php" afterPath="$PROJECT_DIR$/src/Facade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Models/GeneralHelper.php" afterPath="$PROJECT_DIR$/src/Models/GeneralHelper.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Exceptions/ManejadorResultados.php" afterPath="$PROJECT_DIR$/src/Exceptions/ManejadorResultados.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ServiceProvider.php" afterPath="$PROJECT_DIR$/src/ServiceProvider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Models/Validaciones.php" afterPath="$PROJECT_DIR$/src/Models/Validaciones.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Exceptions/ValidationException.php" afterPath="$PROJECT_DIR$/src/Exceptions/ValidationException.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Exceptions/WsException.php" afterPath="$PROJECT_DIR$/src/Exceptions/WsException.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSMTXCA/WsParametros.php" afterPath="$PROJECT_DIR$/src/WSMTXCA/WsParametros.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSAA/Wsaa.php" afterPath="$PROJECT_DIR$/src/WSAA/Wsaa.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSFE/Wsfe.php" afterPath="$PROJECT_DIR$/src/WSFE/Wsfe.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSMTXCA/Wsmtxca.php" afterPath="$PROJECT_DIR$/src/WSMTXCA/Wsmtxca.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSMTXCA/WsmtxcaFuncionesInternas.php" afterPath="$PROJECT_DIR$/src/WSMTXCA/WsmtxcaFuncionesInternas.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSPN3/Wspn3.php" afterPath="$PROJECT_DIR$/src/WSPN3/Wspn3.php" />
     </list>
     <ignored path="afipFacturaElectronica.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -142,6 +123,9 @@
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="499ce8c9-a579-4946-8967-77c6b83fdfe3" name="Default" comment="" />
