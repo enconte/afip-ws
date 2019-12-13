@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace enconte\afipws\Models;
+namespace Enconte\AFIPWS\Models;
 
-use enconte\afipws\Exceptions\ValidationException;
-use enconte\afipws\WSFE\Wsfe;
-use enconte\afipws\WSMTXCA\Wsmtxca;
-use enconte\afipws\WSMTXCA\WsParametros;
+use Enconte\AFIPWS\Exceptions\ValidationException;
+use Enconte\AFIPWS\WSFE\Wsfe;
+use Enconte\AFIPWS\WSMTXCA\Wsmtxca;
+use Enconte\AFIPWS\WSMTXCA\WsParametros;
 use Respect\Validation\Exceptions\NestedValidationException;
 use Respect\Validation\Validator as v;
 

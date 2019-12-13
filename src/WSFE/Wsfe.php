@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace enconte\afipws\WSFE;
+namespace Enconte\AFIPWS\WSFE;
 
-use enconte\afipws\Exceptions\ManejadorResultados;
-use enconte\afipws\Exceptions\WsException;
-use enconte\afipws\Models\AfipConfig;
-use enconte\afipws\Models\Factura;
+use Enconte\AFIPWS\Exceptions\ManejadorResultados;
+use Enconte\AFIPWS\Exceptions\WsException;
+use Enconte\AFIPWS\Models\AfipConfig;
+use Enconte\AFIPWS\Models\Factura;
 
 /**
  * Class Wsfe (Invoice without items).
@@ -51,7 +51,7 @@ class Wsfe extends Factura
      * para un periodo/orden.
      *
      * @throws WsException
-     * @throws \enconte\afipws\Exceptions\ValidationException
+     * @throws \Enconte\AFIPWS\Exceptions\ValidationException
      */
     public function getCAE()
     {
@@ -64,7 +64,7 @@ class Wsfe extends Factura
      * Permite solicitar Código de Autorización Electrónico Anticipado (CAEA).
      *
      * @throws WsException
-     * @throws \enconte\afipws\Exceptions\ValidationException
+     * @throws \Enconte\AFIPWS\Exceptions\ValidationException
      */
     public function requestCAE()
     {
@@ -77,9 +77,9 @@ class Wsfe extends Factura
      * Permite consultar mediante tipo, numero de comprobante y punto de venta los datos  de un comprobante ya emitido.
      *
      * @throws WsException
-     * @throws \enconte\afipws\Exceptions\ValidationException
+     * @throws \Enconte\AFIPWS\Exceptions\ValidationException
      */
-    public function getInvoice()
+    public function getFactura()
     {
         $this->validarDatos($this->datos, $this->getRules('fe'));
 

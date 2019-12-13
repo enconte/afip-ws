@@ -1,8 +1,9 @@
 <?php
-namespace enconte\afipws;
+namespace Enconte\AFIPWS;
 
 use Exception;
-use enconte\afipws\WSFE\Wsfe;
+use Enconte\AFIPWS\WSFE\Wsfe;
+use Enconte\AFIPWS\AFIP;
 use Illuminate\Support\ServiceProvider as IlluminateServiceProvider;
 
 class ServiceProvider extends IlluminateServiceProvider
@@ -26,7 +27,7 @@ class ServiceProvider extends IlluminateServiceProvider
         $configPath = __DIR__.'/../config/afipws.php';
         $this->mergeConfigFrom($configPath, 'afipws');
 
-        // Bind the PHPExcel class
+        // Bind the WSFE class
         $this->app->singleton('wsfe', function ()
         {
             // Init WSFE
@@ -35,6 +36,17 @@ class ServiceProvider extends IlluminateServiceProvider
         });
 
         $this->app->alias('wsfe', Wsfe::class);
+
+        $this->app->singleton('afip', function ($app)
+        {
+            // Init AFIP
+            $afip = new AFIP(
+                $app['wsfe']
+            );
+            return $afip;
+        });
+
+        $this->app->alias('afip', AFIP::class);
     }
 
     public function boot()

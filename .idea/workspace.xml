@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="499ce8c9-a579-4946-8967-77c6b83fdfe3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AFIP.php" afterPath="$PROJECT_DIR$/src/AFIP.php" />
-    </list>
+    <list default="true" id="499ce8c9-a579-4946-8967-77c6b83fdfe3" name="Default" comment="" />
     <ignored path="afipFacturaElectronica.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />

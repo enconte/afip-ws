@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace enconte\afipws\Auth;
+namespace Enconte\AFIPWS\Auth;
 
-use enconte\afipws\Exceptions\WsException;
-use enconte\afipws\Models\AfipConfig;
-use enconte\afipws\Models\AfipWebService;
-use enconte\afipws\WSAA\Wsaa;
+use Enconte\AFIPWS\Exceptions\WsException;
+use Enconte\AFIPWS\Models\AfipConfig;
+use Enconte\AFIPWS\Models\AfipWebService;
+use Enconte\AFIPWS\WSAA\Wsaa;
 use SoapClient;
 use stdClass;
 

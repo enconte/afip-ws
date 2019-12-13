@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace enconte\afipws\WSMTXCA;
+namespace Enconte\AFIPWS\WSMTXCA;
 
-use enconte\afipws\Exceptions\ManejadorResultados;
-use enconte\afipws\Exceptions\WsException;
-use enconte\afipws\Models\AfipConfig;
-use enconte\afipws\Models\Invoice;
+use Enconte\AFIPWS\Exceptions\ManejadorResultados;
+use Enconte\AFIPWS\Exceptions\WsException;
+use Enconte\AFIPWS\Models\AfipConfig;
+use Enconte\AFIPWS\Models\Invoice;
 
 /**
  * Class Wsmtxca (Invoice with items).
@@ -55,7 +55,7 @@ class Wsmtxca extends Invoice
      * Permite consultar  la  información  correspondiente  a  un  CAE  previamente  otorgado.
      *
      * @throws WsException
-     * @throws \enconte\afipws\Exceptions\ValidationException
+     * @throws \Enconte\AFIPWS\Exceptions\ValidationException
      */
     public function getCAE()
     {
@@ -78,7 +78,7 @@ class Wsmtxca extends Invoice
      * Permite consultar  la  información  correspondiente  a  un  CAEA  previamente  otorgado entre un rango de fechas.
      *
      * @throws WsException
-     * @throws \enconte\afipws\Exceptions\ValidationException
+     * @throws \Enconte\AFIPWS\Exceptions\ValidationException
      */
     public function consultarCAEAEntreFechas()
     {
@@ -92,7 +92,7 @@ class Wsmtxca extends Invoice
      * Permite consultar un comprobante con items ya emitido.
      *
      * @throws WsException
-     * @throws \enconte\afipws\Exceptions\ValidationException
+     * @throws \Enconte\AFIPWS\Exceptions\ValidationException
      */
     public function getInvoice()
     {

@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace enconte\afipws\Models;
+namespace Enconte\AFIPWS\Models;
 
-use enconte\afipws\Exceptions\WsException;
-use enconte\afipws\WSFE\Wsfe;
-use enconte\afipws\WSMTXCA\Wsmtxca;
-use enconte\afipws\WSMTXCA\WsParametros as WsmtxcaParameters;
-use enconte\afipws\WSPN3\Wspn3;
+use Enconte\AFIPWS\Exceptions\WsException;
+use Enconte\AFIPWS\WSFE\Wsfe;
+use Enconte\AFIPWS\WSMTXCA\Wsmtxca;
+use Enconte\AFIPWS\WSMTXCA\WsParametros as WsmtxcaParameters;
+use Enconte\AFIPWS\WSPN3\Wspn3;
 
 class AfipWebService
 {

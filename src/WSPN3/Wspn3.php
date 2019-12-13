@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace enconte\afipws\WSPN3;
+namespace Enconte\AFIPWS\WSPN3;
 
-use enconte\afipws\Auth\Authentication;
-use enconte\afipws\Exceptions\ManejadorResultados;
-use enconte\afipws\Exceptions\WsException;
-use enconte\afipws\Models\AfipConfig;
+use Enconte\AFIPWS\Auth\Authentication;
+use Enconte\AFIPWS\Exceptions\ManejadorResultados;
+use Enconte\AFIPWS\Exceptions\WsException;
+use Enconte\AFIPWS\Models\AfipConfig;
 use stdClass;
 
 /**

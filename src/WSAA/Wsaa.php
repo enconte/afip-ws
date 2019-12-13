@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace enconte\afipws\WSAA;
+namespace Enconte\AFIPWS\WSAA;
 
-use enconte\afipws\Exceptions\WsException;
-use enconte\afipws\Models\GeneralHelper;
+use Enconte\AFIPWS\Exceptions\WsException;
+use Enconte\AFIPWS\Models\GeneralHelper;
 use stdClass;
 
 /**

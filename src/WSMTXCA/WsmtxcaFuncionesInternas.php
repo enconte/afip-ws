@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace enconte\afipws\WSMTXCA;
+namespace Enconte\AFIPWS\WSMTXCA;
 
-use enconte\afipws\Exceptions\ManejadorResultados;
-use enconte\afipws\Exceptions\WsException;
+use Enconte\AFIPWS\Exceptions\ManejadorResultados;
+use Enconte\AFIPWS\Exceptions\WsException;
 
 trait WsmtxcaFuncionesInternas
 {

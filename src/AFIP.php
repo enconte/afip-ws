@@ -1,9 +1,8 @@
 <?php
-namespace enconte\afipws;
+namespace Enconte\AFIPWS;
 
 use Exception;
-use enconte\afipws\WSFE\Wsfe;
-use enconte\afipws\Models\Factura;
+use Enconte\AFIPWS\WSFE\Wsfe;
 use Illuminate\Http\Response;
 
 /**
@@ -17,16 +16,11 @@ class AFIP{
     /** @var WSFE  */
     protected $wsfe;
 
-    /** @var Factrura  */
-    protected $factura;
-
-
     /**
      * @param wsfe $wsfe
      */
-    public function __construct(WSFE $wsfe, Factura $factura){
+    public function __construct(WSFE $wsfe){
         $this->wsfe = $wsfe;
-        $this->factura = $factura;
     }
 
     /**

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace enconte\afipws\Exceptions;
+namespace Enconte\AFIPWS\Exceptions;
 
 class ValidationException extends \Exception
 {

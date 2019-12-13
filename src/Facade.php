@@ -1,5 +1,5 @@
 <?php
-namespace enconte\afipws;
+namespace Enconte\AFIPWS;
 
 use Illuminate\Support\Facades\Facade as IlluminateFacade;
 

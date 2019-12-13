@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace enconte\afipws\WSMTXCA;
+namespace Enconte\AFIPWS\WSMTXCA;
 
-use enconte\afipws\Exceptions\ManejadorResultados;
+use Enconte\AFIPWS\Exceptions\ManejadorResultados;
 
 class WsParametros
 {

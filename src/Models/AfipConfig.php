@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace enconte\afipws\Models;
+namespace Enconte\AFIPWS\Models;
 
 class AfipConfig
 {

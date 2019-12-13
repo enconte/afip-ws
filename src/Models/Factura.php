@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace enconte\afipws\Models;
+namespace Enconte\AFIPWS\Models;
 
-use enconte\afipws\Auth\Authentication;
+use Enconte\AFIPWS\Auth\Authentication;
 
 abstract class Factura implements FacturaInterface
 {
